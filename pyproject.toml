@@ -1,0 +1,13 @@
+[project]
+name = "frontend-aesthetics"
+version = "0.1.0"
+description = "Demo walkthrough: prompting Claude for distinctive frontend designs (no more AI slop)"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "anthropic>=0.75",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+# Use uv's own native Python builds, not a system/conda one (avoids Intel-vs-ARM mixups)
+python-preference = "only-managed"
